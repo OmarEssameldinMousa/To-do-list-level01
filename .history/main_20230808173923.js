@@ -98,7 +98,7 @@ menu_bars.addEventListener("click", function () {
 
 menu_bars2.addEventListener("click", function () {
     if (navdiv.style.cssText == "width: 25%;") {
-        navdiv.style.cssText = "width: 3%; overflow: hidden;"
+        navdiv.style.cssText = "width: 3%; overflow: hidden; background-color: orange; height: 100%"
         const navigationChildren = Array.from(document.querySelectorAll(".navigation .profile > *"));
         navigationChildren.forEach(e => {
             e.style.display = "none";

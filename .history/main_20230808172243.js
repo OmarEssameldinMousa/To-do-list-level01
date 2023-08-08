@@ -98,17 +98,12 @@ menu_bars.addEventListener("click", function () {
 
 menu_bars2.addEventListener("click", function () {
     if (navdiv.style.cssText == "width: 25%;") {
-        navdiv.style.cssText = "width: 3%; overflow: hidden;"
-        const navigationChildren = Array.from(document.querySelectorAll(".navigation .profile > *"));
-        navigationChildren.forEach(e => {
-            e.style.display = "none";
-        });
+        navdiv.style.cssText = "width: 3%; overflow: hidden; background-color: orange; height: 100%"
+        navdiv.children[0].childNodes.forEach(e => {
+            e.style.display = "none"
+        })
 
     } else {
         navdiv.style.cssText = "width: 25%;"
-        const navigationChildren = Array.from(document.querySelectorAll(".navigation > *")); // this problem was solved by chatGPT
-        navigationChildren.forEach(e => {
-            e.style.display = "block";
-        });
     }
 })

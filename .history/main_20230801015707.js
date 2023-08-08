@@ -7,10 +7,6 @@ let inputboxValue = inputbox.value;
 let inputbtn = document.querySelector(".add");
 let idtentity = 0;
 let list = [];
-let menu_bars = document.querySelector("i.fa-solid.fa-bars")
-let optionsul = document.querySelector(".nav .navigation ul")
-let menu_bars2 = document.querySelector("i.fa-solid.fa-bars.second")
-let navdiv = document.querySelector(".nav")
 
 function createTaskDiv_NumberDiv() {
     if (inputbox.value != "") {
@@ -88,27 +84,3 @@ document.addEventListener("click", function (e) {
     }
 })
 
-menu_bars.addEventListener("click", function () {
-    if (optionsul.style.display == "block") {
-        optionsul.style.display = "none"
-    } else {
-        optionsul.style.display = "block"
-    }
-})
-
-menu_bars2.addEventListener("click", function () {
-    if (navdiv.style.cssText == "width: 25%;") {
-        navdiv.style.cssText = "width: 3%; overflow: hidden;"
-        const navigationChildren = Array.from(document.querySelectorAll(".navigation .profile > *"));
-        navigationChildren.forEach(e => {
-            e.style.display = "none";
-        });
-
-    } else {
-        navdiv.style.cssText = "width: 25%;"
-        const navigationChildren = Array.from(document.querySelectorAll(".navigation > *")); // this problem was solved by chatGPT
-        navigationChildren.forEach(e => {
-            e.style.display = "block";
-        });
-    }
-})

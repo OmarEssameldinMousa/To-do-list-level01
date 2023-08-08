@@ -3,6 +3,9 @@
     --secondery-color: #ff7f23;
 }
 
+/* mobiles */
+/* mobiles */
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -20,6 +23,16 @@ body {
     height: 100%;
 }
 
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.629);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 ul {
     list-style: none;
@@ -34,8 +47,7 @@ ul {
 }
 
 .nav {
-    /* min-width: 25%; */
-    width: 25%;
+    width: 20%;
     height: 100%;
     position: relative;
 }
@@ -132,7 +144,7 @@ ul {
 li .toggle {
     border: 10px solid var(--secondery-color);
     border-color: transparent transparent transparent #ff7f23;
-    transition: 0.3s;
+
 }
 
 .workstation {
@@ -340,30 +352,6 @@ li .toggle {
     background-color: white;
 }
 
-.nav .navigation .profile i.fa-solid.fa-bars {
-    position: absolute;
-    right: 5px;
-    display: none;
-}
-
-.nav .navigation .profile i.fa-solid.fa-bars.second {
-    position: absolute;
-    right: 5px;
-    display: block;
-}
-
-.nav .navigation .profile i.fa-arrow-left {
-    position: absolute;
-    right: 5px;
-
-}
-
-.nav .navigation .profile i.fa-arrow-right {
-    position: absolute;
-    right: 5px;
-    display: none;
-}
-
 @media (max-width: 767px) {
     body {
         background-image: none;
@@ -374,45 +362,35 @@ li .toggle {
     }
 
     .nav {
-        width: 100% !important;
+        width: 100%;
         height: 50px;
         z-index: 2;
+
     }
 
     .navigation {
-        width: 100%;
         position: absolute;
         background-color: #ff7f23;
-    }
-
-    .nav .navigation ul {
-        width: 100%;
-        display: none;
-    }
-
-    .nav .navigation ul li {
-        border: none;
-        margin: 0;
-    }
-
-    .navigation .footer {
-        display: none;
-    }
-
-    .nav .navigation .profile i.fa-solid.fa-bars {
-        display: inline-block;
-    }
-
-    .nav .navigation .profile i.fa-solid.fa-bars.second {
-        display: none;
     }
 }
 
 /* Small */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
 
 /* Medium */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
 
 /* Large */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
