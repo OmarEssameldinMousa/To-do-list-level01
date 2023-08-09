@@ -251,7 +251,7 @@ li .toggle {
 
 .container .tasks .tasks-container .task i:first-of-type {
     position: absolute;
-    right: 6%;
+    right: 5%;
     top: 53%;
     transform: translateY(-50%);
     color: #ff7f23;

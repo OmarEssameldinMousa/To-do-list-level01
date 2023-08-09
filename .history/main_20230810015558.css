@@ -217,13 +217,13 @@ li .toggle {
 }
 
 .container .tasks .tasks-container .task {
-    width: 95%;
+    width: 80%;
     height: 50px;
     border-radius: 5px;
     border: 0px solid;
     box-shadow: -5px 0 50px 0px #00000073;
     background-color: white;
-    margin: 10px 0px;
+    margin: 10px 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -236,7 +236,7 @@ li .toggle {
 }
 
 
-/* .container .tasks .tasks-container .task::after {
+.container .tasks .tasks-container .task::after {
     content: "";
     width: 10%;
     height: 100%;
@@ -247,14 +247,15 @@ li .toggle {
     z-index: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-} */
+}
 
 .container .tasks .tasks-container .task i:first-of-type {
     position: absolute;
-    right: 6%;
-    top: 53%;
+    right: 4%;
+    top: 50%;
     transform: translateY(-50%);
-    color: #ff7f23;
+    color: white;
+    z-index: 1;
     font-size: 20px;
 }
 
@@ -263,7 +264,8 @@ li .toggle {
     right: 0%;
     top: 50%;
     transform: translateY(-50%);
-    color: #ff7f23;
+    color: white;
+    z-index: 1;
     font-size: 20px;
 }
 

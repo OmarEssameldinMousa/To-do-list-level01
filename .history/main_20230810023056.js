@@ -98,7 +98,7 @@ menu_bars.addEventListener("click", function () {
 
 document.addEventListener("click", function (e) {
     if (e.target.className === "fa-regular fa-square-check") {
-        if (e.target.parentElement.lastChild.style.textDecoration == "line-through") {
+        if (e.target.parentElement.lastChild.style.textDdecoration == "line-through") {
             e.target.parentElement.lastChild.style.cssText = "text-decoration: none;color: black";
             e.target.parentElement.style.cssText = "opacity: 1"
         } else {

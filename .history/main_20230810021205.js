@@ -9,6 +9,7 @@ let idtentity = 0;
 let list = [];
 let menu_bars = document.querySelector("i.fa-solid.fa-bars")
 let optionsul = document.querySelector(".nav .navigation ul")
+let menu_bars2 = document.querySelector("i.fa-solid.fa-bars.second")
 let navdiv = document.querySelector(".nav")
 let checki = document.querySelector("i.fa-regular.fa-square-check")
 
@@ -96,14 +97,7 @@ menu_bars.addEventListener("click", function () {
     }
 });
 
-document.addEventListener("click", function (e) {
-    if (e.target.className === "fa-regular fa-square-check") {
-        if (e.target.parentElement.lastChild.style.textDecoration == "line-through") {
-            e.target.parentElement.lastChild.style.cssText = "text-decoration: none;color: black";
-            e.target.parentElement.style.cssText = "opacity: 1"
-        } else {
-            e.target.parentElement.lastChild.style.cssText = "text-decoration: line-through;color: grey";
-            e.target.parentElement.style.cssText = "opacity: 0.5"
-        }
-    }
-})
+checki.addEventListener("click", function (e) {
+    // checki.parentNode.children[3].style.cssText = "text-decoration: line-through;"
+    console.log(e.target)
+});

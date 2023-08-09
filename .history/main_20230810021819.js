@@ -98,12 +98,6 @@ menu_bars.addEventListener("click", function () {
 
 document.addEventListener("click", function (e) {
     if (e.target.className === "fa-regular fa-square-check") {
-        if (e.target.parentElement.lastChild.style.textDecoration == "line-through") {
-            e.target.parentElement.lastChild.style.cssText = "text-decoration: none;color: black";
-            e.target.parentElement.style.cssText = "opacity: 1"
-        } else {
-            e.target.parentElement.lastChild.style.cssText = "text-decoration: line-through;color: grey";
-            e.target.parentElement.style.cssText = "opacity: 0.5"
-        }
+        e.target.parentElement.lastChild.style.cssText = "text-decoration: line-through;"
     }
-})
+}

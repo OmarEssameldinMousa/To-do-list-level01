@@ -217,13 +217,13 @@ li .toggle {
 }
 
 .container .tasks .tasks-container .task {
-    width: 95%;
+    width: 80%;
     height: 50px;
     border-radius: 5px;
     border: 0px solid;
     box-shadow: -5px 0 50px 0px #00000073;
     background-color: white;
-    margin: 10px 0px;
+    margin: 10px 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -250,8 +250,7 @@ li .toggle {
 } */
 
 .container .tasks .tasks-container .task i:first-of-type {
-    position: absolute;
-    right: 6%;
+    float: right;
     top: 53%;
     transform: translateY(-50%);
     color: #ff7f23;
@@ -259,8 +258,7 @@ li .toggle {
 }
 
 .container .tasks .tasks-container .task i:last-of-type {
-    position: absolute;
-    right: 0%;
+    float: right;
     top: 50%;
     transform: translateY(-50%);
     color: #ff7f23;
