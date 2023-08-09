@@ -33,7 +33,7 @@ ul {
 }
 
 .nav {
-    width: 300px;
+    width: 25%;
     height: 100%;
     position: relative;
     margin-top: 20px;
@@ -331,8 +331,7 @@ li .toggle {
 }
 
 .nav .navigation .profile i.fa-solid.fa-bars {
-    position: absolute;
-    right: 10px;
+    margin-left: 5px;
 }
 
 

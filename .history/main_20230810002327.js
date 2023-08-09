@@ -88,10 +88,17 @@ document.addEventListener("click", function (e) {
     }
 })
 
+// menu_bars.addEventListener("click", function () {
+//     if (optionsul.style.display == "block") {
+//         optionsul.style.display = "none"
+//     } else {
+//         optionsul.style.display = "block"
+//     }
+// })
 menu_bars.addEventListener("click", function () {
-    if (optionsul.style.display == "block") {
-        optionsul.style.display = "none"
+    if (optionsul.style.opacity == "1") {
+        optionsul.style.opacity = "0";
     } else {
-        optionsul.style.display = "block"
+        optionsul.style.opacity = "1";
     }
-})
+});

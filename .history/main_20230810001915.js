@@ -94,4 +94,5 @@ menu_bars.addEventListener("click", function () {
     } else {
         optionsul.style.display = "block"
     }
-})
+}, 5000)
+

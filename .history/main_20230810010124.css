@@ -18,12 +18,13 @@ body {
     background-size: cover;
     position: relative;
     height: 100%;
-    background-attachment: fixed;
 }
+
 
 ul {
     list-style: none;
 }
+
 
 .dashboard {
     display: flex;
@@ -33,12 +34,11 @@ ul {
 }
 
 .nav {
-    width: 300px;
+    width: 25%;
     height: 100%;
     position: relative;
     margin-top: 20px;
     border-radius: 5px;
-    margin-left: 20px;
 }
 
 .nav .navigation {
@@ -53,9 +53,9 @@ ul {
     background-color: var(--secondery-color);
     display: flex;
     align-items: center;
+    /* border-bottom: 5px solid white; */
     border-radius: 5px;
     position: relative;
-    flex-wrap: wrap;
 }
 
 .nav .navigation .profile .profile-pic {
@@ -149,8 +149,6 @@ li .toggle {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .container .tasks {
@@ -184,7 +182,6 @@ li .toggle {
     border: 10px solid #ff7f23;
     border-color: transparent transparent transparent #ff7f23;
     margin-right: 10px;
-    margin-left: 10px;
 }
 
 .container .form div .input {
@@ -332,14 +329,13 @@ li .toggle {
 
 .nav .navigation .profile i.fa-solid.fa-bars {
     position: absolute;
-    right: 10px;
+    right: 5px;
 }
 
 
 @media (max-width: 767px) {
     body {
-        background-image: url(longphoto.jpg);
-
+        background-image: none;
     }
 
     .dashboard {
@@ -347,7 +343,6 @@ li .toggle {
     }
 
     .nav {
-        margin-left: 0;
         margin-top: 0;
         width: 100% !important;
         height: 50px;
@@ -363,12 +358,10 @@ li .toggle {
     .nav .navigation ul {
         width: 100%;
         display: none;
-        box-shadow: 0px 0 30px 0px #000000a9;
     }
 
     .nav .navigation ul li {
         border: none;
-        border-bottom: 1px solid #ff7f23;
         margin: 0;
     }
 
@@ -383,7 +376,6 @@ li .toggle {
     .nav .navigation .profile i.fa-solid.fa-bars.second {
         display: none;
     }
-
 }
 
 /* Small */
